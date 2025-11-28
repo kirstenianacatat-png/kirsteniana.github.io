@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kirsten | Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+    <span class="icon sun">☀️</span>
+    <span class="icon moon">🌙</span>
+  </button>
+
+  <aside class="sidebar" role="navigation" aria-label="Main">
+    <div>
+      <div class="logo">Kirsten</div>
+
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a class="active" href="projects.html">Projects</a></li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <a class="contact-link" href="mailto:yourgmail@gmail.com">Gmail</a>
+      <a class="contact-link" href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+      <a class="contact-link" href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+
+      <div class="side-footer">© 2025 Kirsten<br>All Rights Reserved</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <section class="content fade-in reveal">
+      <h2>Projects</h2>
+
+      <div class="project-list">
+        <article class="project-card" data-title="Portfolio Website" data-desc="A pastel, responsive portfolio showcasing UI and front-end projects.">
+          <h3>Portfolio Website</h3>
+          <p>A pastel, responsive portfolio showcasing UI and front-end projects.</p>
+        </article>
+
+        <article class="project-card" data-title="Login UI Concept" data-desc="Soft, accessible login design with gentle animations.">
+          <h3>Login UI Concept</h3>
+          <p>Soft, accessible login design with gentle animations.</p>
+        </article>
+
+        <article class="project-card" data-title="Mini JS Apps" data-desc="Calculator, timer, and other small projects to practice DOM & logic.">
+          <h3>Mini JS Apps</h3>
+          <p>Calculator, timer, and other small projects to practice DOM & logic.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- PROJECT MODAL -->
+  <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-inner">
+      <button class="modal-close" aria-label="Close project">✕</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div class="modal-actions">
+        <a id="modalDemo" class="btn" href="#">Live Demo</a>
+        <a id="modalCode" class="btn" href="#">Source</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
